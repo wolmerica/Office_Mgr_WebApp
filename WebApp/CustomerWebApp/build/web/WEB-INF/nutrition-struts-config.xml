@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : nutrition-struts-config.xml
+    Created on : November 26, 2007, 10:14 PM
+    Author     : Richard Wolschlager
+    Description: Customer accessible web application.
+
+-->
+
+<!DOCTYPE struts-config
+ PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN"
+      "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd" >
+<struts-config>
+
+     <data-sources>
+<!-- configuration for commons BasicDataSource -->
+        <data-source type="org.apache.commons.dbcp.BasicDataSource">
+            <set-property
+              property="driverClassName"
+              value="com.mysql.jdbc.Driver" />
+            <set-property
+              property="url"
+              value="jdbc:mysql://localhost/nutrition?useUnicode=true&amp;characterEncoding=UTF-8" />
+            <set-property
+              property="username"
+              value="customer" />
+            <set-property
+              property="password"
+              value="New4Me" />
+            <set-property
+              property="maxActive"
+              value="10" />        
+            <set-property
+              property="maxWait"
+              value="5000" />
+            <set-property
+              property="defaultAutoCommit"
+              value="true" />
+            <set-property
+              property="defaultReadOnly"
+              value="false" />
+        </data-source>
+    </data-sources>
+    
+  <form-beans>
+    <form-bean name="customerForm"
+      type="com.wolmerica.customer.CustomerForm" />
+    <form-bean name="customerListForm"
+      type="com.wolmerica.customer.CustomerListForm" />
+    <form-bean name="customerListHeadForm"
+      type="com.wolmerica.customer.CustomerListHeadForm" />  
+    <form-bean name="customerAccountingForm"
+      type="com.wolmerica.customeraccounting.CustomerAccountingForm" />
+    <form-bean name="customerAccountingListForm"
+      type="com.wolmerica.customeraccounting.CustomerAccountingListForm" />      
+    <form-bean name="customerAccountingListHeadForm"
+      type="com.wolmerica.customeraccounting.CustomerAccountingListHeadForm" /> 
+    <form-bean name="customerInvoiceReportForm"
+      type="com.wolmerica.customerinvoicereport.CustomerInvoiceReportForm" />
+    <form-bean name="customerInvoiceReportListHeadForm"    
+      type="com.wolmerica.customerinvoicereport.CustomerInvoiceReportListHeadForm" />      
+    <form-bean name="customerInvoiceReportDetailForm"
+      type="com.wolmerica.customerinvoicereportdetail.CustomerInvoiceReportDetailForm" />
+    <form-bean name="customerInvoiceReportDetailListHeadForm"
+      type="com.wolmerica.customerinvoicereportdetail.CustomerInvoiceReportDetailListHeadForm" />      
+    <form-bean name="customerTypeForm"
+      type="com.wolmerica.customertype.CustomerTypeForm" />
+    <form-bean name="customerTypeListHeadForm"
+      type="com.wolmerica.customertype.CustomerTypeListHeadForm" />      
+    <form-bean name="itemSaleForm"
+      type="com.wolmerica.itemsalereport.ItemSaleForm" />
+    <form-bean name="itemSaleListHeadForm"
+      type="com.wolmerica.itemsalereport.ItemSaleListHeadForm" />
+    <form-bean name="ledgerForm"
+      type="com.wolmerica.ledger.LedgerForm" />
+    <form-bean name="ledgerListHeadForm"
+      type="com.wolmerica.ledger.LedgerListHeadForm" />      
+    <form-bean name="loginForm"
+      type="com.wolmerica.login.LoginForm" />  
+    <form-bean name="permissionForm"
+      type="com.wolmerica.permission.PermissionForm" />
+    <form-bean name="resourceInstanceForm"
+      type="com.wolmerica.resourceinstance.ResourceInstanceForm" />
+    <form-bean name="resourceInstanceListHeadForm"
+      type="com.wolmerica.resourceinstance.ResourceInstanceListHeadForm" />        
+    <form-bean name="scheduleForm"
+      type="com.wolmerica.schedule.ScheduleForm" />
+    <form-bean name="scheduleListHeadForm"
+      type="com.wolmerica.schedule.ScheduleListHeadForm" />
+    <form-bean name="serviceSaleForm"
+      type="com.wolmerica.servicesalereport.ServiceSaleForm" />
+    <form-bean name="serviceSaleListHeadForm"
+      type="com.wolmerica.servicesalereport.ServiceSaleListHeadForm" />      
+  </form-beans>
+
+  <global-forwards>
+    <forward name="login" path="/LoginEntry.do"/>
+  </global-forwards>
+
+  <action-mappings>
+      
+<!-- ================== LOGIN ACTIONS =================== -->
+    <action path="/LoginEntry"
+      type="com.wolmerica.login.LoginEntryAction"
+      scope="request">
+      <forward name="success" path="loginLayout"/>
+      <forward name="error" path="initErrorLayout"/>
+    </action>
+    <action path="/Login"
+      type="com.wolmerica.login.LoginAction"
+      validate="true"
+      input="loginLayout"
+      name="loginForm"
+      scope="request" 
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <forward name="success" path="/MenuEntry.do"/>
+      <forward name="error" path="/LoginEntry.do"/>    
+    </action>
+    <action path="/Logout"
+      type="com.wolmerica.login.LogoutAction"
+      scope="request" 
+      className="com.wolmerica.customer.CustomerActionMapping">      
+      <forward name="success" path="/LoginEntry.do"/>
+      <forward name="error" path="errorLayout"/>
+    </action>      
+
+<!-- ================= CUSTOMER ACTIONS =================== -->
+    <action path="/CustomerLoad"
+      type="com.wolmerica.customer.CustomerGetAction"
+      name="customerForm"
+      scope="session"
+      validate="false" 
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="customereditLayout"/>
+      <forward name="error" path="errorLayout"/>
+    </action>    
+    
+<!-- =============== CUSTOMER ACCOUNTING ACTIONS ============== -->
+    <action path="/CustomerAccountingList"
+      type="com.wolmerica.customeraccounting.CustomerAccountingListAction"
+      name="customerAccountingListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="customeraccountinglistLayout"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>
+    
+<!-- ================= CUSTOMER ACTIONS =================== -->
+    <action path="/CustomerLookUp"
+      type="com.wolmerica.customer.CustomerListAction"
+      name="customerListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="customerlookupLayout"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>    
+      
+<!-- ============ CUSTOMER INVOICE REPORT ACTIONS ============= -->
+    <action path="/CustomerInvoiceReportList"
+      type="com.wolmerica.customerinvoicereport.CustomerInvoiceReportListAction"
+      name="customerInvoiceReportListHeadForm"      
+      scope="session" 
+      validate="false"
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>         
+      <forward name="success" path="/CustomerInvoiceReportDetailList.do"/>
+      <forward name="error" path="errorLayout"/>
+    </action>
+    
+<!-- ========= CUSTOMER INVOICE REPORT DETAIL ACTIONS ========= -->
+    <action path="/CustomerInvoiceReportDetailList"
+      type="com.wolmerica.customerinvoicereportdetail.CustomerInvoiceReportDetailListAction"
+      name="customerInvoiceReportDetailListHeadForm"
+      scope="session" 
+      validate="false"
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>         
+      <forward name="success" path="customerinvoicereportlistLayout"/>
+      <forward name="error" path="errorLayout"/>
+    </action>     
+    
+<!-- ================= ITEM SALES ACTIONS =================== -->           
+    <action path="/ItemSaleDetailList"
+      type="com.wolmerica.itemsalereport.ItemSaleDetailListAction"
+      name="itemSaleListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="itemsaledetaillistLayout"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>    
+    <action path="/ItemSaleSummaryList"
+      type="com.wolmerica.itemsalereport.ItemSaleSummaryListAction"
+      name="itemSaleListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="itemsalesummarylistLayout"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>
+    
+<!-- =================== ITEXT ACTIONS ===================== -->  
+    <action path="/PdfCustomerInvoice"
+      type="com.wolmerica.pdf.PdfCustomerInvoiceAction"
+      scope="request" 
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="error" path="errorLayout"/>
+    </action>  
+    
+<!-- ================== LEDGER ACTIONS =================== -->
+    <action path="/LedgerList"
+      type="com.wolmerica.ledger.LedgerListAction"
+      name="ledgerListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="ledgerlistLayout"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>    
+    
+<!-- ============= RESOURCE INSTANCE ACTIONS =============== -->   
+    <action path="/MenuEntry"
+      type="com.wolmerica.resourceinstance.CustomerEventListAction"
+      name="resourceInstanceListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="/CustomerLoad.do"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>     
+
+<!-- ================ SERVICE SALES ACTIONS ================== -->           
+    <action path="/ServiceSaleDetailList"
+      type="com.wolmerica.servicesalereport.ServiceSaleDetailListAction"
+      name="serviceSaleListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="servicesaledetaillistLayout"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>    
+    <action path="/ServiceSaleSummaryList"
+      type="com.wolmerica.servicesalereport.ServiceSaleSummaryListAction"
+      name="serviceSaleListHeadForm"
+      scope="session"
+      validate="false"  
+      className="com.wolmerica.customer.CustomerActionMapping">
+      <set-property property="loginRequired" value="true"/>
+      <forward name="success" path="servicesalesummarylistLayout"/>
+      <forward name="error" path="errorLayout"/>      
+    </action>    
+    
+  </action-mappings>
+  
+  <controller contentType="text/html;charset=UTF-8" />
+
+  <message-resources
+         parameter="ApplicationResources"/>
+         
+   <!-- Tiles Configuration -->
+  <plug-in className="org.apache.struts.tiles.TilesPlugin">
+    <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml"/>
+  </plug-in>         
+    
+</struts-config>

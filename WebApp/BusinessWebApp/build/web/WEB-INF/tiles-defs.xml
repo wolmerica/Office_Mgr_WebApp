@@ -1,0 +1,607 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration//EN"
+       "http://wolmerica.localdomain/dtds/tiles-config_1_1.dtd">
+
+<tiles-definitions>
+  <definition name="exportLayout" path="/exportLayout.jsp">
+    <put name="body" value="" />
+  </definition>    
+  
+  <definition name="jsonLayout" path="/blank.jsp">
+    <put name="body" value="" />
+  </definition>      
+    
+  <definition name="mainLayout" path="/mainLayout.jsp">
+    <put name="title" value="" />
+    <put name="header" value="/common/header.jsp" />
+    <put name="footer" value="/common/footer.jsp" />
+    <put name="body" value="" />
+  </definition>
+
+  <definition name="loginLayout" extends="mainLayout" >
+    <put name="title" value="Login" />
+    <put name="header" value="/blank.jsp" />    
+    <put name="body" value="/login.jsp" />
+  </definition>  
+  
+  <definition name="initErrorLayout" extends="mainLayout" >  
+    <put name="title" value="Office Initialization Error" />
+    <put name="header" value="/blank.jsp" />        
+    <put name="body" value="/WOWInitErrorPage.jsp" />
+  </definition>
+  
+  <definition name="errorLayout" extends="mainLayout" >
+    <put name="title" value="Office Wizard Error" />
+    <put name="body" value="/WOWAppErrorPage.jsp" />
+  </definition>
+    
+  <definition name="duplicateYearLayout" extends="mainLayout" >  
+    <put name="title" value="Duplicate Previous Year" />       
+    <put name="body" value="/WOWDuplicateYearPage.jsp" />
+  </definition>      
+    
+  <definition name="sendLayout" extends="mainLayout" >  
+    <put name="title" value="Office Wizard Instant Message" />
+    <put name="header" value="/blank.jsp" />        
+    <put name="body" value="/WOWSendPage.jsp" />
+  </definition>  
+
+  <definition name="menuLayout" extends="mainLayout" >
+    <put name="title" value="Menu Options" />
+    <put name="body" value="/menu.jsp" />
+  </definition>
+  
+  <definition name="attachAuditLayout" extends="mainLayout" >  
+    <put name="title" value="Attachment Audit" />
+    <put name="body" value="/WOWAttachAuditPage.jsp" />
+  </definition>      
+  <definition name="attachmenteditLayout" extends="mainLayout" >
+    <put name="title" value="Attachment Maintenance" />
+    <put name="body" value="/attachmentedit.jsp" />  
+  </definition>
+  <definition name="attachmentlistLayout" extends="mainLayout" >
+    <put name="title" value="Attachment List" />
+    <put name="body" value="/attachmentlist.jsp" />
+  </definition>
+
+  <definition name="breededitLayout" extends="mainLayout" >
+    <put name="title" value="Breed Maintenance" />
+    <put name="body" value="/breededit.jsp" />
+  </definition>
+  <definition name="breedlistLayout" extends="mainLayout" >
+    <put name="title" value="Breed List" />
+    <put name="body" value="/breedlist.jsp" />
+  </definition>
+  <definition name="breedlookupLayout" extends="mainLayout" >  
+    <put name="title" value="Breed Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/breedlookup.jsp" />    
+  </definition>
+  
+  <definition name="bundleeditLayout" extends="mainLayout" >
+    <put name="title" value="Bundle Maintenance" />
+    <put name="body" value="/bundleedit.jsp" />  
+  </definition>
+  <definition name="bundlelistLayout" extends="mainLayout" >
+    <put name="title" value="Bundle List" />
+    <put name="body" value="/bundlelist.jsp" />
+  </definition>    
+  
+  <definition name="calendarlistLayout" extends="mainLayout" >
+    <put name="title" value="Event Calendar" />
+    <put name="body" value="/calendarlist.jsp" />    
+  </definition>    
+
+  <definition name="categorylookupLayout" extends="mainLayout" >  
+    <put name="title" value="Category Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/categorylookup.jsp" />    
+  </definition>       
+    
+  <definition name="customereditLayout" extends="mainLayout" >
+    <put name="title" value="Customer Maintenance" />
+    <put name="body" value="/customeredit.jsp" />    
+  </definition>
+  <definition name="customerexportLayout" extends="exportLayout" >  
+    <put name="body" value="/customerexport.jsp" />
+  </definition>  
+  <definition name="customerlistLayout" extends="mainLayout" >
+    <put name="title" value="Customer List" />
+    <put name="body" value="/customerlist.jsp" />    
+  </definition>  
+  
+  <definition name="customerlookupLayout" extends="mainLayout" >  
+    <put name="title" value="Customer Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/customerlookup.jsp" />    
+  </definition>  
+  
+  <definition name="customeraccountingeditLayout" extends="mainLayout" >
+    <put name="title" value="Customer Accounting Maintenance" />
+    <put name="body" value="/customeraccountingedit.jsp" />    
+  </definition>
+  <definition name="customeraccountinglistLayout" extends="mainLayout" >
+    <put name="title" value="Customer Accounting List" />
+    <put name="body" value="/customeraccountinglist.jsp" />    
+  </definition>    
+  
+  <definition name="customerinvoiceeditLayout" extends="mainLayout" >
+    <put name="title" value="Customer Invoice Maintenance" />
+    <put name="body" value="/customerinvoiceedit.jsp" />
+  </definition>
+  <definition name="customerinvoicelistLayout" extends="mainLayout" >
+    <put name="title" value="Customer Invoice List" />
+    <put name="body" value="/customerinvoicelist.jsp" />
+  </definition>  
+  
+  <definition name="customerinvoiceitemlistLayout" extends="mainLayout" >
+    <put name="title" value="Customer Invoice Item List" />
+    <put name="body" value="/customerinvoiceitemlist.jsp" /> 
+  </definition>   
+  
+  <definition name="customerinvoicereportlistLayout" extends="mainLayout" >
+    <put name="title" value="Customer Invoice Report" />
+    <put name="body" value="/customerinvoicereportlist.jsp" />
+  </definition>    
+
+  <definition name="customerinvoiceservicelistLayout" extends="mainLayout" >
+    <put name="title" value="Customer Invoice Service List" />
+    <put name="body" value="/customerinvoiceservicelist.jsp" /> 
+  </definition>  
+
+  <definition name="customertypeeditLayout" extends="mainLayout" >
+    <put name="title" value="Customer Type Maintenance" />
+    <put name="body" value="/customertypeedit.jsp" />    
+  </definition>
+  <definition name="customertypelistLayout" extends="mainLayout" >
+    <put name="title" value="Customer Type List" />
+    <put name="body" value="/customertypelist.jsp" />    
+  </definition>  
+  
+  <definition name="employeeeditLayout" extends="mainLayout" >
+    <put name="title" value="Employee Maintenance" />
+    <put name="body" value="/employeeedit.jsp" />  
+  </definition>
+  <definition name="employeeexportLayout" extends="exportLayout" >  
+    <put name="body" value="/employeeexport.jsp" />
+  </definition>   
+  <definition name="employeelistLayout" extends="mainLayout" >
+    <put name="title" value="Employee List" />
+    <put name="body" value="/employeelist.jsp" />
+  </definition>    
+  
+  <definition name="expenseeditLayout" extends="mainLayout" >
+    <put name="title" value="Expense Maintenance" />
+    <put name="body" value="/expenseedit.jsp" />  
+  </definition>
+  <definition name="expenselistLayout" extends="mainLayout" >
+    <put name="title" value="Expense List" />
+    <put name="body" value="/expenselist.jsp" />
+  </definition>  
+  <definition name="expensesummarylistLayout" extends="mainLayout" >
+    <put name="title" value="Expense Summary List" />
+    <put name="body" value="/expensesummarylist.jsp" />
+  </definition>  
+ 
+  <definition name="expenselookupLayout" extends="mainLayout" >  
+    <put name="title" value="Expense Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/expenselookup.jsp" />    
+  </definition>       
+    
+  <definition name="fileuploadeditLayout" extends="mainLayout" >
+    <put name="title" value="File Upload Maintenance" />
+    <put name="body" value="/fileuploadedit.jsp" />  
+  </definition>
+  <definition name="fileuploadlistLayout" extends="mainLayout" >
+    <put name="title" value="File Upload List" />
+    <put name="body" value="/fileuploadlist.jsp" />
+  </definition>     
+  
+  <definition name="helpeditLayout" extends="mainLayout" >
+    <put name="title" value="Support List" />
+    <put name="body" value="/helpedit.jsp" />
+  </definition>      
+  
+  <definition name="helplistLayout" extends="mainLayout" >
+    <put name="title" value="Support List" />
+    <put name="header" value="/blank.jsp" />
+    <put name="body" value="/helplist.jsp" />
+  </definition>    
+  
+  <definition name="itemeditLayout" extends="mainLayout" >
+    <put name="title" value="Item Dictionary Maintenance" />
+    <put name="body" value="/itemdictedit.jsp" />
+  </definition>
+  <definition name="itemlistLayout" extends="mainLayout" >
+    <put name="title" value="Item Dictionary List" />
+    <put name="body" value="/itemdictlist.jsp" />
+  </definition>
+  
+  <definition name="itemoriginlistLayout" extends="mainLayout" >
+    <put name="title" value="Item Origin List" />
+    <put name="body" value="/itemoriginlist.jsp" />
+  </definition>  
+  
+  <definition name="itempurchasedetaillistLayout" extends="mainLayout" >
+    <put name="title" value="Item Purchase Detail List" />
+    <put name="body" value="/itempurchasedetaillist.jsp" />
+  </definition>   
+  <definition name="itempurchasesummarylistLayout" extends="mainLayout" >
+      <put name="title" value="Item Purchase Summary List" />
+      <put name="body" value="/itempurchasesummarylist.jsp" />
+  </definition>  
+    
+  <definition name="itemsaledetaillistLayout" extends="mainLayout" >
+    <put name="title" value="Item Sale Detail List" />
+    <put name="body" value="/itemsaledetaillist.jsp" />
+  </definition>   
+  <definition name="itemsalesummarylistLayout" extends="mainLayout" >
+    <put name="title" value="Item Sale Summary List" />
+    <put name="body" value="/itemsalesummarylist.jsp" />
+  </definition>   
+    
+  <definition name="ledgereditLayout" extends="mainLayout" >
+    <put name="title" value="Ledger Maintenance" />
+    <put name="body" value="/ledgeredit.jsp" />
+  </definition>   
+  <definition name="ledgerlistLayout" extends="mainLayout" >
+    <put name="title" value="Ledger List" />
+    <put name="body" value="/ledgerlist.jsp" />
+  </definition>  
+  
+  <definition name="licenseeditLayout" extends="mainLayout" >
+    <put name="title" value="License Edit" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />    
+    <put name="body" value="/licenseedit.jsp" />
+  </definition>      
+  <definition name="licenselistLayout" extends="mainLayout" >
+    <put name="title" value="License List" />
+    <put name="body" value="/licenselist.jsp" />
+  </definition>
+  
+  <definition name="logviewLayout" extends="mainLayout" >
+    <put name="title" value="Web Application Log" />
+    <put name="body" value="/logviewer.jsp" />
+  </definition>    
+  
+  <definition name="logisticslistLayout" extends="mainLayout" >
+    <put name="title" value="Logistics List" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />    
+    <put name="body" value="/logisticslist.jsp" />
+  </definition>    
+
+  <definition name="manufacturerlookupLayout" extends="mainLayout" >  
+    <put name="title" value="Manufacturer Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/manufacturerlookup.jsp" />    
+  </definition>       
+  
+  <definition name="peteditLayout" extends="mainLayout" >
+    <put name="title" value="Pet Maintenance" />
+    <put name="body" value="/petedit.jsp" />
+  </definition>  
+  <definition name="petlistLayout" extends="mainLayout" >
+    <put name="title" value="Pet List" />
+    <put name="body" value="/petlist.jsp" />
+  </definition> 
+  
+  <definition name="petlookupLayout" extends="mainLayout" >  
+    <put name="title" value="Pet Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/petlookup.jsp" />    
+  </definition> 
+  
+  <definition name="petboardeditLayout" extends="mainLayout" >
+    <put name="title" value="Pet Boarding Maintenance" />
+    <put name="body" value="/petboardedit.jsp" />
+  </definition>  
+  <definition name="petboardlistLayout" extends="mainLayout" >
+    <put name="title" value="Pet Boarding List" />
+    <put name="body" value="/petboardlist.jsp" />
+  </definition>   
+
+  <definition name="petexameditLayout" extends="mainLayout" >
+    <put name="title" value="Pet Exam Maintenance" />
+    <put name="body" value="/petexamedit.jsp" />
+  </definition>  
+  <definition name="petexamlistLayout" extends="mainLayout" >
+    <put name="title" value="Pet Exam List" />
+    <put name="body" value="/petexamlist.jsp" />
+  </definition>   
+    
+  <definition name="petvaceditLayout" extends="mainLayout" >
+    <put name="title" value="Pet Vaccination Maintenance" />
+    <put name="body" value="/petvacedit.jsp" />
+  </definition>  
+  <definition name="petvaclistLayout" extends="mainLayout" >
+    <put name="title" value="Pet Vaccination List" />
+    <put name="body" value="/petvaclist.jsp" />
+  </definition>   
+  
+  <definition name="pricebyitemlookupLayout" extends="mainLayout" >  
+    <put name="title" value="Item Price Adjustment" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />    
+    <put name="body" value="/pricebyitemlookup.jsp" />    
+  </definition>   
+  
+  <definition name="pricebyservicelookupLayout" extends="mainLayout" >  
+    <put name="title" value="Service Price Adjustment" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />    
+    <put name="body" value="/pricebyservicelookup.jsp" />    
+  </definition>     
+
+  <definition name="pricesheetlistLayout" extends="mainLayout" >
+    <put name="title" value="Price Sheet List" />
+    <put name="body" value="/pricesheetlist.jsp" />
+  </definition>   
+  
+  <definition name="pricetypeeditLayout" extends="mainLayout" >
+    <put name="title" value="Price Type Maintenance" />
+    <put name="body" value="/pricetypeedit.jsp" />    
+  </definition>
+  <definition name="pricetypelistLayout" extends="mainLayout" >
+    <put name="title" value="Price Type List" />
+    <put name="body" value="/pricetypelist.jsp" />    
+  </definition>    
+  
+  <definition name="promotioneditLayout" extends="mainLayout" >
+    <put name="title" value="Promotion Maintenance" />
+    <put name="body" value="/promotionedit.jsp" />  
+  </definition>
+  <definition name="promotionlistLayout" extends="mainLayout" >
+    <put name="title" value="Promotion List" />
+    <put name="body" value="/promotionlist.jsp" />
+  </definition>    
+  
+  <definition name="prospecteditLayout" extends="mainLayout" >
+    <put name="title" value="Prospect Maintenance" />
+    <put name="body" value="/prospectedit.jsp" />
+  </definition>
+  <definition name="prospectexportLayout" extends="exportLayout" >  
+    <put name="body" value="/prospectexport.jsp" />
+  </definition>   
+  <definition name="prospectlistLayout" extends="mainLayout" >
+    <put name="title" value="Prospect List" />
+    <put name="body" value="/prospectlist.jsp" />
+  </definition>  
+  
+  <definition name="purchaseordereditLayout" extends="mainLayout" >
+    <put name="title" value="Purchase Order Maintenance" />
+    <put name="body" value="/purchaseorderedit.jsp" />
+  </definition>
+  <definition name="purchaseorderlistLayout" extends="mainLayout" >
+    <put name="title" value="Purchase Order List" />
+    <put name="body" value="/purchaseorderlist.jsp" /> 
+  </definition> 
+  
+  <definition name="purchaseorderitemlistLayout" extends="mainLayout" >
+    <put name="title" value="Purchase Order Item List" />
+    <put name="body" value="/purchaseorderitemlist.jsp" /> 
+  </definition> 
+  
+  <definition name="purchaseorderservicelistLayout" extends="mainLayout" >
+    <put name="title" value="Purchase Order Service List" />
+    <put name="body" value="/purchaseorderservicelist.jsp" /> 
+  </definition>   
+  
+  <definition name="rebateeditLayout" extends="mainLayout" >
+    <put name="title" value="Rebate Maintenance" />
+    <put name="body" value="/rebateedit.jsp" />    
+  </definition>
+  <definition name="rebatelistLayout" extends="mainLayout" >
+    <put name="title" value="Rebate List" />
+    <put name="body" value="/rebatelist.jsp" />    
+  </definition>    
+  
+  <definition name="rebateinstanceeditLayout" extends="mainLayout" >
+    <put name="title" value="Rebate Submission Maintenance" />
+    <put name="body" value="/rebateinstanceedit.jsp" />    
+  </definition>
+  <definition name="rebateinstancelistLayout" extends="mainLayout" >
+    <put name="title" value="Rebate Submission List" />
+    <put name="body" value="/rebateinstancelist.jsp" />    
+  </definition>  
+ 
+  <definition name="resourceallocationLayout" extends="mainLayout" >
+    <put name="title" value="Resource Allocation" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />    
+    <put name="body" value="/resourceallocation.jsp" />
+  </definition>    
+  <definition name="resourceeditLayout" extends="mainLayout" >
+    <put name="title" value="Resource Maintenance" />
+    <put name="body" value="/resourceedit.jsp" />
+  </definition>  
+  <definition name="resourcelistLayout" extends="mainLayout" >
+    <put name="title" value="Resource List" />
+    <put name="body" value="/resourcelist.jsp" />
+  </definition>    
+  
+  <definition name="resourcelookupLayout" extends="mainLayout" >  
+    <put name="title" value="Resource Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />    
+    <put name="body" value="/resourcelookup.jsp" />    
+  </definition>   
+
+  <definition name="scheduleeditLayout" extends="mainLayout" >
+    <put name="title" value="Event Maintenance" />
+    <put name="body" value="/scheduleedit.jsp" />
+  </definition> 
+  <definition name="scheduleexportLayout" extends="exportLayout" >  
+    <put name="body" value="/scheduleexport.jsp" />
+  </definition>  
+  <definition name="schedulelistLayout" extends="mainLayout" >
+    <put name="title" value="Event List" />
+    <put name="body" value="/schedulelist.jsp" />
+  </definition>  
+   
+  <definition name="servicedicteditLayout" extends="mainLayout" >
+    <put name="title" value="Service Dictionary Maintenance" />
+    <put name="body" value="/servicedictedit.jsp" />    
+  </definition>
+  <definition name="servicedictlistLayout" extends="mainLayout" >
+    <put name="title" value="Service Dictionary List" />
+    <put name="body" value="/servicedictlist.jsp" />    
+  </definition>    
+  
+   <definition name="servicelabordetaillistLayout" extends="mainLayout" >
+     <put name="title" value="Service Labor Detail List" />
+     <put name="body" value="/servicelabordetaillist.jsp" />
+   </definition>   
+   <definition name="servicelaborsummarylistLayout" extends="mainLayout" >
+     <put name="title" value="Service Labor Summary List" />
+     <put name="body" value="/servicelaborsummarylist.jsp" />
+   </definition>     
+ 
+   <definition name="servicesaledetaillistLayout" extends="mainLayout" >
+     <put name="title" value="Service Sale Detail List" />
+     <put name="body" value="/servicesaledetaillist.jsp" />
+   </definition>   
+   <definition name="servicesalesummarylistLayout" extends="mainLayout" >
+     <put name="title" value="Service Sale Summary List" />
+     <put name="body" value="/servicesalesummarylist.jsp" />
+   </definition>   
+
+  <definition name="specieseditLayout" extends="mainLayout" >
+    <put name="title" value="Species Maintenance" />
+    <put name="body" value="/speciesedit.jsp" />
+  </definition>
+  <definition name="specieslistLayout" extends="mainLayout" >
+    <put name="title" value="Species List" />
+    <put name="body" value="/specieslist.jsp" />
+  </definition>
+  
+  <definition name="systemeditLayout" extends="mainLayout" >
+    <put name="title" value="System Maintenance" />
+    <put name="body" value="/systemedit.jsp" />
+  </definition>  
+  <definition name="systemlistLayout" extends="mainLayout" >
+    <put name="title" value="System List" />
+    <put name="body" value="/systemlist.jsp" />
+  </definition>  
+ 
+  <definition name="systemlookupLayout" extends="mainLayout" >  
+    <put name="title" value="System Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/systemlookup.jsp" />    
+  </definition>  
+  
+  <definition name="taxmarkupeditLayout" extends="mainLayout" >
+    <put name="title" value="Tax and Mark-Up Maintenance" />
+    <put name="body" value="/taxmarkupedit.jsp" />    
+  </definition>
+  <definition name="taxmarkuplistLayout" extends="mainLayout" >
+    <put name="title" value="Tax and Mark-Up List" />
+    <put name="body" value="/taxmarkuplist.jsp" />    
+  </definition> 
+    
+  <definition name="userstatelistLayout" extends="mainLayout" >
+    <put name="title" value="User State List" />
+    <put name="body" value="/userstatelist.jsp" />    
+  </definition>   
+  
+  <definition name="vehicleeditLayout" extends="mainLayout" >
+    <put name="title" value="Vehicle Maintenance" />
+    <put name="body" value="/vehicleedit.jsp" />
+  </definition>  
+  <definition name="vehiclelistLayout" extends="mainLayout" >
+    <put name="title" value="Vehicle List" />
+    <put name="body" value="/vehiclelist.jsp" />
+  </definition>  
+ 
+  <definition name="vehiclelookupLayout" extends="mainLayout" >  
+    <put name="title" value="Vehicle Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/vehiclelookup.jsp" />    
+  </definition>    
+    
+  <definition name="vendoreditLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Maintenance" />
+    <put name="body" value="/vendoredit.jsp" />
+  </definition>
+  <definition name="vendorexportLayout" extends="exportLayout" >  
+    <put name="body" value="/vendorexport.jsp" />
+  </definition>    
+  <definition name="vendorlistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor List" />
+    <put name="body" value="/vendorlist.jsp" />
+  </definition>
+  <definition name="vendorlookupLayout" extends="mainLayout" >  
+    <put name="title" value="Vendor Look Up" />
+    <put name="header" value="/blank.jsp" />
+    <put name="footer" value="/blank.jsp" />
+    <put name="body" value="/vendorlookup.jsp" />    
+  </definition> 
+  
+  <definition name="vendoraccountingeditLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Accounting Maintenance" />
+    <put name="body" value="/vendoraccountingedit.jsp" />    
+  </definition>
+  <definition name="vendoraccountinglistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Accounting List" />
+    <put name="body" value="/vendoraccountinglist.jsp" />    
+  </definition>    
+    
+  <definition name="vendorinvoiceeditLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Invoice Maintenance" />
+    <put name="body" value="/vendorinvoiceedit.jsp" />  
+  </definition> 
+  <definition name="vendorinvoicelistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Invoice List" />
+    <put name="body" value="/vendorinvoicelist.jsp" />     
+  </definition>   
+
+  <definition name="vendorinvoiceitemlistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Invoice Item List" />
+    <put name="body" value="/vendorinvoiceitemlist.jsp" /> 
+  </definition> 
+  
+  <definition name="vendorinvoiceservicelistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Invoice Service List" />
+    <put name="body" value="/vendorinvoiceservicelist.jsp" /> 
+  </definition> 
+  
+  <definition name="vendorinvoiceduelistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Invoice Due List" />
+    <put name="body" value="/vendorinvoiceduelist.jsp" />     
+  </definition>  
+  
+  <definition name="vendorinvoicereportlistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Invoice Report" />
+    <put name="body" value="/vendorinvoicereportlist.jsp" />
+  </definition>
+
+  <definition name="vendorresulteditLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Result Maintenance" />
+    <put name="body" value="/vendorresultedit.jsp" />
+  </definition>
+  <definition name="vendorresultimportLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Result Import" />
+    <put name="body" value="/vendorresultimport.jsp" />
+  </definition>  
+  <definition name="vendorresultlistLayout" extends="mainLayout" >
+    <put name="title" value="Vendor Result List" />
+    <put name="body" value="/vendorresultlist.jsp" />
+  </definition>
+  
+  <definition name="workorderlistLayout" extends="mainLayout" >
+    <put name="title" value="Work Order List" />
+    <put name="body" value="/workorderlist.jsp" />
+  </definition>    
+         
+</tiles-definitions>

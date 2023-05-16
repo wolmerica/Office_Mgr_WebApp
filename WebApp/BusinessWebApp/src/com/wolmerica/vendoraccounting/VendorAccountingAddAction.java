@@ -1,0 +1,264 @@
+/*
+ * VendorAccountingAddAction.java
+ *
+ * Created on March 28, 2006, 9:50 PM
+ *
+ * To change this template, choose Tools | Options and locate the template under
+ * the Source Creation and Management node. Right-click the template and choose
+ * Open. You can then make changes to the template in the Source Editor.
+ * 12/21/2005 Implement tools.formatter library.
+ */
+
+package com.wolmerica.vendoraccounting;
+
+//--------------------------------------------------------------------------------
+// @author Richard Wolschlager
+//--------------------------------------------------------------------------------
+import com.wolmerica.employee.EmployeesActionMapping;
+import com.wolmerica.service.userstate.UserStateService;
+import com.wolmerica.service.userstate.DefaultUserStateService;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import org.apache.struts.action.Action;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionForward;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
+
+import javax.sql.DataSource;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.math.BigDecimal;
+
+import org.apache.log4j.Logger;
+
+public class VendorAccountingAddAction extends Action {
+
+  Logger cat = Logger.getLogger("WOWAPP");
+
+  private UserStateService userStateService = new DefaultUserStateService();
+
+  public UserStateService getUserStateService() {
+      return userStateService;
+  }
+
+  public void setUserStateService(UserStateService userStateService) {
+      this.userStateService = userStateService;
+  }
+  
+
+  private Integer insertVendorAccounting(HttpServletRequest request,
+                                           ActionForm form)
+    throws Exception, SQLException {
+
+    DataSource ds = null;
+    Connection conn = null;
+    PreparedStatement ps = null;
+    ResultSet rs = null;
+
+    Integer vaKey = 1;
+    Boolean clinicId = false;
+
+    try {
+      ds = getDataSource(request);
+      conn = ds.getConnection();
+
+      VendorAccountingDO formDO = (VendorAccountingDO) request.getSession().getAttribute("vendoraccountingDO");
+
+//===========================================================================
+// Get the maximum key from the vendor accounting.
+//===========================================================================
+      String query = "SELECT clinic_id "
+                   + "FROM vendor "
+                   + "WHERE thekey = ?";
+      ps = conn.prepareStatement(query);
+      ps.setInt(1, formDO.getVendorKey());
+      rs = ps.executeQuery();
+      if (rs.next()) {
+         clinicId = rs.getBoolean("clinic_id");
+      }
+      else {
+        throw new Exception("Vendor clinic_id not found!");
+      }
+
+//--------------------------------------------------------------------------------
+// Only post the non-clinic related vendor activity to the accounting table.
+//--------------------------------------------------------------------------------
+      if (!(clinicId)) {
+//--------------------------------------------------------------------------------
+// All credit and payment values will be negative values.
+//--------------------------------------------------------------------------------
+        if ((formDO.getTransactionTypeKey() == 2) || (formDO.getTransactionTypeKey() == 3))
+          formDO.setAmount(formDO.getAmount().abs().negate());
+//--------------------------------------------------------------------------------
+// Get the maximum key from the vendor accounting.
+//--------------------------------------------------------------------------------
+        query = "SELECT COUNT(*) AS ca_cnt, MAX(thekey)+1 AS ca_key "
+              + "FROM vendoraccounting";
+        ps = conn.prepareStatement(query);
+        rs = ps.executeQuery();
+        if ( rs.next() ) {
+          if ( rs.getInt("ca_cnt") > 0 ) {
+             vaKey = rs.getInt("ca_key");
+          }
+        }
+        else {
+          throw new Exception("Vendor Accounting Max() not found!");
+        }
+//--------------------------------------------------------------------------------
+// Define a insert query for the vendor accounting table.
+//--------------------------------------------------------------------------------
+        query = "INSERT INTO vendoraccounting "
+              + "(thekey,vendor_key,transactiontype_key,"
+              + "sourcetype_key,source_key,number,"
+              + "amount,note,reconciled_id,"
+              + "create_user,create_stamp,"
+              + "update_user,update_stamp) "
+              + "VALUES(?,?,?,?,?,?,?,?,?,?,"
+              + "CURRENT_TIMESTAMP,?,CURRENT_TIMESTAMP)";
+        cat.debug(this.getClass().getName() + ": Query = " + query);
+        ps = conn.prepareStatement(query);
+        cat.debug(this.getClass().getName() + ": getKey() = " + vaKey);
+        cat.debug(this.getClass().getName() + ": vendorKey() = " + formDO.getVendorKey());
+        cat.debug(this.getClass().getName() + ": transactionTypeKey() = " + formDO.getTransactionTypeKey());
+        cat.debug(this.getClass().getName() + ": sourceTypeKey() = " + formDO.getSourceTypeKey());
+        cat.debug(this.getClass().getName() + ": sourceKey() = " + formDO.getSourceKey());
+
+        ps.setInt(1, vaKey);
+        ps.setInt(2, formDO.getVendorKey());
+        ps.setByte(3, formDO.getTransactionTypeKey());
+        ps.setByte(4, formDO.getSourceTypeKey());
+        cat.debug(this.getClass().getName() + ": before getSourceKey()");
+        ps.setInt(5, formDO.getSourceKey());
+        cat.debug(this.getClass().getName() + ": before getNumber()");
+        ps.setString(6, formDO.getNumber());
+        cat.debug(this.getClass().getName() + ": before getAmount()");
+        ps.setBigDecimal(7, formDO.getAmount().setScale(2, BigDecimal.ROUND_HALF_UP));
+        ps.setString(8, formDO.getNote());
+        ps.setBoolean(9, formDO.getReconciledId());
+        ps.setString(10, request.getSession().getAttribute("USERNAME").toString());
+        ps.setString(11, request.getSession().getAttribute("USERNAME").toString());
+        cat.debug(this.getClass().getName() + ": before executeUpdate()");
+
+        ps.executeUpdate();
+        cat.debug(this.getClass().getName() + ": after executeUpdate()");
+      }
+    }
+    catch (SQLException e) {
+      cat.error(this.getClass().getName() + ": SQLException : " + e.getMessage());
+    }
+    finally {
+      if (rs != null) {
+        try {
+          rs.close();
+        }
+        catch (SQLException sqle) {
+          cat.error(this.getClass().getName() + ": SQLException : " + sqle.getMessage());
+        }
+        rs = null;
+      }
+      if (ps != null) {
+        try {
+          ps.close();
+        }
+        catch (SQLException sqle) {
+            cat.error(this.getClass().getName() + ": SQLException : " + sqle.getMessage());
+        }
+        ps = null;
+      }
+      if (conn != null) {
+        try {
+          conn.close();
+        }
+        catch (SQLException sqle) {
+            cat.error(this.getClass().getName() + ": SQLException : " + sqle.getMessage());
+        }
+        conn = null;
+      }
+    }
+    return vaKey;
+  }
+
+    @Override
+  public ActionForward execute(ActionMapping mapping,
+		ActionForm form,
+		HttpServletRequest request,
+		HttpServletResponse response)
+		throws IOException, ServletException {
+
+		// Default target to success
+    String target = "success";
+
+    EmployeesActionMapping employeesMapping =
+      (EmployeesActionMapping)mapping;
+
+//--------------------------------------------------------------------------------
+// Does this action require the user to login.
+//--------------------------------------------------------------------------------
+    if ( employeesMapping.isLoginRequired() ) {
+
+      if ( request.getSession().getAttribute("USER") == null ) {
+//--------------------------------------------------------------------------------
+// The user is not logged in.
+//--------------------------------------------------------------------------------
+        target = "login";
+        ActionMessages actionMessages = new ActionMessages();
+
+        actionMessages.add(ActionMessages.GLOBAL_MESSAGE,
+          new ActionMessage("errors.login.required"));
+//--------------------------------------------------------------------------------
+// Report any ActionMessages we have discovered back to the original form.
+//--------------------------------------------------------------------------------
+        if (!actionMessages.isEmpty()) {
+          saveMessages(request, actionMessages);
+        }
+//--------------------------------------------------------------------------------
+// Forward to the request to the login screen.
+//--------------------------------------------------------------------------------
+        return (mapping.findForward(target));
+      }
+    }
+
+    try {
+//--------------------------------------------------------------------------------
+// 07-23-06  Code to handle permissions and avoid simultaneous updates to records.
+//--------------------------------------------------------------------------------
+      
+      String usToken = getUserStateService().getUserToken(request,
+                                              this.getDataSource(request).getConnection(),
+                                              this.getClass().getName(),
+                                              getUserStateService().getNoKey());
+      if (usToken.equalsIgnoreCase(getUserStateService().getLocked()))
+        request.setAttribute(getUserStateService().getDisableEdit(), false);
+      else if (usToken.equalsIgnoreCase(getUserStateService().getProhibited()))
+        throw new Exception(getUserStateService().getAccessDenied());
+
+      Integer theKey = null;
+      theKey = insertVendorAccounting(request, form);
+      request.setAttribute("key", theKey.toString());
+    }
+    catch (Exception e) {
+      cat.error(this.getClass().getName() + ": Exception : " + e.getMessage());
+      target = "error";
+      ActionMessages actionMessages = new ActionMessages();
+      actionMessages.add(ActionMessages.GLOBAL_MESSAGE,
+        new ActionMessage("errors.database.error", e.getMessage()));
+//--------------------------------------------------------------------------------
+// Report any ActionMessages
+//--------------------------------------------------------------------------------
+      if (!actionMessages.isEmpty()) {
+        saveMessages(request, actionMessages);
+      }
+    }
+//--------------------------------------------------------------------------------
+// Forward to the appropriate View
+//--------------------------------------------------------------------------------
+    return (mapping.findForward(target));
+  }
+}

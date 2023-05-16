@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/BusinessWebApp">
+  <Logger className="org.apache.catalina.logger.FileLogger" prefix="BusinessWebApp." suffix=".log" timestamp="true"/>
+</Context>

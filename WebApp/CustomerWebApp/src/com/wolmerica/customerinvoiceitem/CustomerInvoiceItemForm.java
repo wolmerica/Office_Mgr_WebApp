@@ -1,0 +1,320 @@
+/*
+ * CustomerInvoiceItemForm.java
+ *
+ * Created on December 06, 2005, 12:36 AM
+ *
+ * To change this template, choose Tools | Options and locate the template under
+ * the Source Creation and Management node. Right-click the template and choose
+ * Open. You can then make changes to the template in the Source Editor.
+ */
+
+package com.wolmerica.customerinvoiceitem;
+
+/**
+ *
+ * @author Richard
+ */
+import com.wolmerica.customer.CustomerActionMapping;
+import com.wolmerica.tools.formatter.MasterForm;
+
+import javax.servlet.http.HttpServletRequest;
+import org.apache.struts.action.ActionForm;
+import org.apache.struts.action.ActionMapping;
+import org.apache.struts.action.ActionErrors;
+import org.apache.struts.action.ActionMessage;
+import org.apache.struts.action.ActionMessages;
+import org.apache.struts.Globals;
+import java.sql.Timestamp;
+import java.util.Date;
+import java.math.BigDecimal;
+
+public class CustomerInvoiceItemForm extends MasterForm
+{
+  private String key;
+  private String customerInvoiceKey;
+  private String vendorInvoiceItemKey;
+  private String itemDictionaryKey;
+  private String priceTypeKey;
+  private String brandName;
+  private String genericName;
+  private String size;
+  private String sizeUnit;
+  private String dose;
+  private String availableQty;
+  private String orderQty;
+  private String remainingQty;
+  private String thePrice;
+  private String extendPrice;
+  private String discountRate;
+  private String discountAmount;
+  private String costBasis;
+  private String enableSalesTaxId;
+  private String salesTaxId;
+  private String genesisKey;
+  private String masterKey;
+  private String noteLine1;
+  private String createUser;
+  private String createStamp;
+  private String updateUser;
+  private String updateStamp;
+
+  public CustomerInvoiceItemForm() {
+    addRequiredFields(new String[] { "orderQty", "thePrice", "salesTaxId" } );
+    addRange("orderQty", new Short("0"), new Short("9999"));
+    addRange("remainingQty", new Short("0"), new Short("9999"));
+    addRange("thePrice", new BigDecimal("0.00"), new BigDecimal("99999"));
+  }
+
+  public void setKey(String key) {
+    this.key = key;
+  }
+
+  public String getKey() {
+    return key;
+  }
+
+  public void setCustomerInvoiceKey(String customerInvoiceKey) {
+    this.customerInvoiceKey = customerInvoiceKey;
+  }
+
+  public String getCustomerInvoiceKey() {
+    return customerInvoiceKey;
+  }
+
+  public void setVendorInvoiceItemKey(String vendorInvoiceItemKey) {
+    this.vendorInvoiceItemKey = vendorInvoiceItemKey;
+  }
+
+  public String getVendorInvoiceItemKey() {
+    return vendorInvoiceItemKey;
+  }
+
+  public void setItemDictionaryKey(String itemDictionaryKey) {
+    this.itemDictionaryKey = itemDictionaryKey;
+  }
+
+  public String getItemDictionaryKey() {
+    return itemDictionaryKey;
+  }
+
+  public void setPriceTypeKey(String priceTypeKey) {
+    this.priceTypeKey = priceTypeKey;
+  }
+
+  public String getPriceTypeKey() {
+    return priceTypeKey;
+  }
+
+  public void setBrandName(String brandName) {
+    this.brandName = brandName;
+  }
+
+  public String getBrandName() {
+    return brandName;
+  }
+
+  public void setGenericName(String genericName) {
+    this.genericName = genericName;
+  }
+
+  public String getGenericName() {
+    return genericName;
+  }
+
+  public void setSize(String size) {
+    this.size = size;
+  }
+
+  public String getSize() {
+    return size;
+  }
+
+  public void setSizeUnit(String sizeUnit) {
+    this.sizeUnit = sizeUnit;
+  }
+
+  public String getSizeUnit() {
+    return sizeUnit;
+  }
+
+  public void setDose(String dose) {
+    this.dose = dose;
+  }
+
+  public String getDose() {
+    return dose;
+  }
+
+ public void setAvailableQty(String availableQty) {
+    this.availableQty = availableQty;
+  }
+
+  public String getAvailableQty() {
+    return availableQty;
+  }
+
+ public void setOrderQty(String orderQty) {
+    this.orderQty = orderQty;
+  }
+
+  public String getOrderQty() {
+    return orderQty;
+  }
+
+ public void setRemainingQty(String remainingQty) {
+    this.remainingQty = remainingQty;
+  }
+
+  public String getRemainingQty() {
+    return remainingQty;
+  }
+
+  public void setThePrice(String thePrice) {
+    this.thePrice = thePrice;
+  }
+
+  public String getThePrice() {
+    return thePrice;
+  }
+
+  public void setExtendPrice(String extendPrice) {
+    this.extendPrice = extendPrice;
+  }
+
+  public String getExtendPrice() {
+    return extendPrice;
+  }
+
+  public void setDiscountRate(String discountRate) {
+    this.discountRate = discountRate;
+  }
+
+  public String getDiscountRate() {
+    return discountRate;
+  }
+
+  public void setDiscountAmount(String discountAmount) {
+    this.discountAmount = discountAmount;
+  }
+
+  public String getDiscountAmount() {
+    return discountAmount;
+  }
+
+  public void setCostBasis(String costBasis) {
+    this.costBasis = costBasis;
+  }
+
+  public String getCostBasis() {
+    return costBasis;
+  }
+
+  public void setEnableSalesTaxId(String enableSalesTaxId) {
+    this.enableSalesTaxId = enableSalesTaxId;
+  }
+
+  public String getEnableSalesTaxId() {
+    return enableSalesTaxId;
+  }
+
+  public void setSalesTaxId(String salesTaxId) {
+    this.salesTaxId = salesTaxId;
+  }
+
+  public String getSalesTaxId() {
+    return salesTaxId;
+  }
+
+  public void setGenesisKey(String genesisKey) {
+    this.genesisKey = genesisKey;
+  }
+
+  public String getGenesisKey() {
+    return genesisKey;
+  }
+
+  public void setMasterKey(String masterKey) {
+    this.masterKey = masterKey;
+  }
+
+  public String getMasterKey() {
+    return masterKey;
+  }
+
+  public void setNoteLine1(String noteLine1) {
+    this.noteLine1 = noteLine1;
+  }
+
+  public String getNoteLine1() {
+    return noteLine1;
+  }
+
+  public void setCreateUser(String createUser) {
+    this.createUser = createUser;
+  }
+
+  public String getCreateUser() {
+    return createUser;
+  }
+
+  public void setCreateStamp(String createStamp) {
+    this.createStamp = createStamp;
+  }
+
+  public String getCreateStamp() {
+    return createStamp;
+  }
+
+  public void setUpdateUser(String updateUser) {
+    this.updateUser = updateUser;
+  }
+
+  public String getUpdateUser() {
+    return updateUser;
+  }
+
+  public void setUpdateStamp(String updateStamp) {
+    this.updateStamp = updateStamp;
+  }
+
+  public String getUpdateStamp() {
+    return updateStamp;
+  }
+
+  public ActionErrors validate(ActionMapping mapping,
+                               HttpServletRequest request) {
+
+    ActionErrors errors = new ActionErrors();
+
+    CustomerActionMapping customerMapping =
+      (CustomerActionMapping)mapping;
+
+//--------------------------------------------------------------------------------
+// Does this action require the user to login.
+//--------------------------------------------------------------------------------
+    if ( customerMapping.isLoginRequired() ) {
+
+      if ( request.getSession().getAttribute("ACCTKEY") == null ) {
+
+        // return null to force action to handle login
+        // error
+        return null;
+      }
+    }
+
+    errors = super.validate(mapping, request);
+
+    // Post a global message instructing user to clean up
+    // validation errors and resubmit
+
+    if (errors.size() > 0) {
+      ActionMessage message =
+          new ActionMessage("message.validation");
+      ActionMessages messages = new ActionMessages();
+          messages.add(ActionMessages.GLOBAL_MESSAGE, message);
+      request.setAttribute(Globals.MESSAGE_KEY, messages);
+    }
+
+    return errors;
+  }
+}

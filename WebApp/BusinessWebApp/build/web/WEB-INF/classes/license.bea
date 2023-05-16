@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--Product="LIC-WLS81-BASE-56", Release="8.1", BEA_License_ID="2139847", License_Creation_Date="08/05/05 14:50:42 PDT" -->
+<bea-licenses>
+    <license-group format="1.0" product="WebLogic Platform" release="8.1">
+        <license
+            component="SSL/Export"
+            cpus="1"
+            expiration="never"
+            ip="192.168.96.61"
+            licensee="VCA Antech Diagnostic Inc."
+            serial="650522264138-1765636204846"
+            signature="MCwCFE3TxrjzKfnrc2tXug6mJFzV1zrhAhR1RBqE+Nsd7fSQ2KldLYP/m5Y2qQ=="
+            type="RTK"
+            units="unlimited"
+        />
+    </license-group>
+</bea-licenses>

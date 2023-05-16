@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/j2ee/dtds/web-apps_2_3.dtd">
+    
+<web-app>
+
+  <filter>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <filter-class>com.wolmerica.filter.ServletCharacterEncodingFilter</filter-class>
+    <init-param>
+      <param-name>encoding</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>CharacterEncodingFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/wolmerica-struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>config/demo</param-name>
+      <param-value>/WEB-INF/demo-struts-config.xml</param-value>
+    </init-param>       
+    <init-param>
+      <param-name>config/lindaw</param-name>
+      <param-value>/WEB-INF/lindaw-struts-config.xml</param-value>
+    </init-param>   
+    <init-param>
+      <param-name>config/nutrition</param-name>
+      <param-value>/WEB-INF/nutrition-struts-config.xml</param-value>
+    </init-param>       
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>5</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>5</param-value>
+    </init-param>
+
+    <load-on-startup>2</load-on-startup>
+  </servlet>
+   
+    <servlet-mapping>
+       <servlet-name>action</servlet-name>
+       <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+        
+    <session-config>
+        <session-timeout>
+            11
+        </session-timeout>
+    </session-config>    
+    
+    <welcome-file-list>
+	<welcome-file>
+            login.jsp
+        </welcome-file>
+    </welcome-file-list>
+
+    <taglib>
+       <taglib-uri>/WEB-INF/tlds/struts-bean.tld</taglib-uri>
+       <taglib-location>/WEB-INF/tlds/struts-bean.tld</taglib-location>
+    </taglib>      
+    <taglib>
+       <taglib-uri>/WEB-INF/tlds/struts-html.tld</taglib-uri>
+       <taglib-location>/WEB-INF/tlds/struts-html.tld</taglib-location>
+    </taglib>    
+    <taglib>
+       <taglib-uri>/WEB-INF/tlds/struts-logic.tld</taglib-uri>
+       <taglib-location>/WEB-INF/tlds/struts-logic.tld</taglib-location>
+    </taglib>    
+    <taglib>
+       <taglib-uri>/WEB-INF/tlds/struts-tiles.tld</taglib-uri>
+       <taglib-location>/WEB-INF/tlds/struts-tiles.tld</taglib-location>
+    </taglib>        
+   
+    <security-constraint>
+      <web-resource-collection>
+        <web-resource-name>no_access</web-resource-name>
+        <url-pattern>*.jsp</url-pattern>
+      </web-resource-collection>
+      <auth-constraint/>
+    </security-constraint>    
+     
+</web-app>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="HPPavilionDv6" name="NewEmptyJUnitTest" tests="1" time="0.0" timestamp="2013-08-16T01:09:19">
+  <properties>
+    <property name="libs.jsp-compiler.javadoc" value="" />
+    <property name="netbeans.autoupdate.country" value="US" />
+    <property name="ant.file.BusinessWebApp" value="D:\wow\src\working\WebApp\BusinessWebApp\build.xml" />
+    <property name="javac.test.classpath" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:build/web/WEB-INF/classes:C:\Users\Richard\.netbeans\7.1.2\modules\ext\junit-4.10.jar" />
+    <property name="libs.jsf20.maven-pom" value="" />
+    <property name="source.root" value="." />
+    <property name="do.display.browser" value="true" />
+    <property name="file.reference.commons-fileupload.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="file.reference.catalina-ant.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.junit.javadoc" value="C:\Users\Richard\.netbeans\7.1.2\docs\junit-3.8.2-api.zip" />
+    <property name="ant.core.lib" value="C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant.jar" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="libs.toplink.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\toplink\toplink-essentials.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\toplink\toplink-essentials-agent.jar" />
+    <property name="libs.jsp-compilation.javadoc" value="" />
+    <property name="user.dir" value="D:\wow\src\working\WebApp\BusinessWebApp" />
+    <property name="libs.hibernate-persistence.javadoc" value="" />
+    <property name="no.deps" value="true" />
+    <property name="java.vm.version" value="17.0-b17" />
+    <property name="libs.jstl11.maven-pom" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsimport" value="" />
+    <property name="libs.MySQLDriver.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\ext\mysql-connector-java-5.1.13-bin.jar" />
+    <property name="no.dependencies" value="true" />
+    <property name="libs.eclipselinkmodelgen.src" value="" />
+    <property name="libs.jstl11.src" value="" />
+    <property name="javadoc.notree" value="false" />
+    <property name="lib.dir" value="web/WEB-INF/lib" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="libs.EclipseLink-GlassFish-v3.classpath" value="C:\Program Files\glassfish-3.1.1\glassfish\modules\org.eclipse.persistence.antlr.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\org.eclipse.persistence.asm.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\org.eclipse.persistence.core.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\org.eclipse.persistence.jpa.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\org.eclipse.persistence.jpa.modelgen.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\org.eclipse.persistence.oracle.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.persistence.jar" />
+    <property name="file.reference.jasper-el.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.javaee-web-api-6.0.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\javaee-web-api-6.0.jar" />
+    <property name="libs.hibernate-support.maven-pom" value="" />
+    <property name="libs.hibernate-support.javadoc" value="" />
+    <property name="auxiliary.org-netbeans-modules-projectapi.jsf_2e_present" value="true" />
+    <property name="file.reference.WebApp-BusinessWebApp" value="." />
+    <property name="jdk.home" value="D:\usr\local\Java\jdk1.6.0_21" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="do.tmp.war.package" value="true" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="nb.show.statistics.ui" value="usageStatisticsEnabled" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="have.tests" value="true" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="j2ee.server.instance" value="tomcat70:home=D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="os.name" value="Windows NT (unknown)" />
+    <property name="file.reference.tomcat-i18n-ja.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.beans-binding.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\beansbinding-1.2.1.jar" />
+    <property name="org.whattf.datatype.lang-registry" value="jar:file:/C:/Program%20Files/NetBeans%207.1.2/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_language_subtag_registry" />
+    <property name="libs.restapi.javadoc" value="C:\Users\Richard\.netbeans\7.1.2\docs\jsr311-api-1.1.1-javadoc.zip" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="nu.validator.spec.alt-advice" value="jar:file:/C:/Program%20Files/NetBeans%207.1.2/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_Validator_nu_alt_advice" />
+    <property name="libs.spring-webmvc3.0.src" value="" />
+    <property name="libs.restapi.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jsr311-api-1.1.1.jar" />
+    <property name="runmain.jvmargs" value="" />
+    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="libs.jaxb.maven-pom" value="" />
+    <property name="os.arch" value="x86" />
+    <property name="libs.eclipselink.src" value="" />
+    <property name="user.name" value="Richard" />
+    <property name="j2ee.compile.on.save" value="false" />
+    <property name="libs.jsf12.javadoc" value="" />
+    <property name="libs.Comet-GlassFish-v3.javadoc" value="" />
+    <property name="libs.spring-webmvc3.0.maven-pom" value="" />
+    <property name="libs.swing-layout.maven-pom" value="" />
+    <property name="build.classes.dir" value="build/web/WEB-INF/classes" />
+    <property name="netbeans.accept_license_class" value="org.netbeans.license.AcceptLicense" />
+    <property name="libs.Java-EE-GlassFish-v3.wsjwsdp" value="" />
+    <property name="libs.jaxws21.javadoc" value="C:\Program Files\NetBeans 7.1.2\java\docs\jaxws-api-doc.zip" />
+    <property name="build.web.excludes" value="**/*.java,**/*.form" />
+    <property name="includes" value="**" />
+    <property name="user.country" value="US" />
+    <property name="libs.jstl11.javadoc" value="" />
+    <property name="javadoc.encoding" value="" />
+    <property name="javac.classpath" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.jsp-compilation-syscp.src" value="" />
+    <property name="file.reference.commons-discovery-0.2.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="file.reference.ymsg_test_v0_6.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="do.debug.server" value="true" />
+    <property name="debug-transport" value="dt_shmem" />
+    <property name="file.reference.commons-validator.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="netbeans.home" value="C:\Program Files\NetBeans 7.1.2\platform" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="file.reference.el-api.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.javaee-web-api-6.0.src" value="" />
+    <property name="libs.ejb3-persistence.src" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.javadoc" value="" />
+    <property name="libs.jsp-compilation-syscp.classpath" value="C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\servlet3.0-jsp2.2-api.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\glassfish-jspparser-3.0.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\standard.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-2_1\jsf-impl.jar" />
+    <property name="file.reference.catalina-ha.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="java.endorsed.dirs" value="D:\usr\local\Java\jdk1.6.0_21\jre\lib\endorsed" />
+    <property name="libs.Comet-GlassFish-v3.maven-pom" value="" />
+    <property name="libs.groovy-all.src" value="" />
+    <property name="netbeans.dynamic.classpath" value="C:\Program Files\NetBeans 7.1.2\platform\core\core.jar;C:\Program Files\NetBeans 7.1.2\platform\core\org-openide-filesystems.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\core_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_ja.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_ru.jar;C:\Program Files\NetBeans 7.1.2\platform\core\locale\org-openide-filesystems_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\nb\core\org-netbeans-upgrader.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_ja.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_ru.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\core_nb_zh_CN.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_ja.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_pt_BR.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_ru.jar;C:\Program Files\NetBeans 7.1.2\nb\core\locale\org-netbeans-upgrader_zh_CN.jar" />
+    <property name="java.vm.specification.version" value="1.0" />
+    <property name="libs.primefaces.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\primefaces\primefaces-2.2.1.jar" />
+    <property name="jspcompilation.classpath" value="${jspc.classpath}:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.javaee-api-6.0.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\javaee-api-6.0.jar" />
+    <property name="libs.groovy-all.maven-pom" value="" />
+    <property name="netbeans.productversion" value="NetBeans IDE 7.1.2 (Build 201204101705)" />
+    <property name="libs.hibernate-persistence.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\antlr-2.7.6.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\asm.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\asm-attrs.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\cglib-2.1.3.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\commons-collections-2.1.1.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\dom4j-1.6.1.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\ehcache-1.2.3.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\jdbc2_0-stdext.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\jta.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate3.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-tools.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-annotations.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-commons-annotations.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-entitymanager.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\javassist.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\ejb3-persistence.jar" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="do.war.package.with.custom.manifest" value="true" />
+    <property name="netbeans.autoupdate.language" value="en" />
+    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="test.BusinessWebApp.dir" value="." />
+    <property name="libs.javaee-api-6.0.javadoc" value="" />
+    <property name="file.reference.xerces-2.4.0.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="javac.debug" value="true" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="file.separator" value="\" />
+    <property name="libs.restlib_gfv3ee6.classpath" value="C:\Program Files\glassfish-3.1.1\glassfish\modules\jackson-core-asl.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jackson-jaxrs.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jackson-mapper-asl.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-client.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-core.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-gf-server.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-json.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-multipart.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jettison.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\mimepull.jar" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="javac.test.processorpath" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:build/web/WEB-INF/classes:C:\Users\Richard\.netbeans\7.1.2\modules\ext\junit-4.10.jar" />
+    <property name="netbeans.buildnumber" value="201204101705" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="user.variant" value="" />
+    <property name="libs.eclipselinkmodelgen.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\eclipselink\eclipselink-jpa-modelgen-2.3.0.jar" />
+    <property name="libs.Java-EE-GlassFish-v3.wscompile" value="" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="libs.junit.classpath" value="" />
+    <property name="libs.jaxb.javadoc" value="C:\Program Files\NetBeans 7.1.2\ide\docs\jaxb-api-doc.zip" />
+    <property name="libs.struts.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\antlr-2.7.2.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\bsf-2.3.0.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\commons-beanutils-1.8.0.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\commons-chain-1.2.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\commons-digester-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\commons-fileupload-1.1.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\commons-io-1.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\commons-logging-1.0.4.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\commons-validator-1.3.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\jstl-1.0.2.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\oro-2.0.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\standard-1.0.6.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-core-1.3.10.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-el-1.3.10.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-extras-1.3.10.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-faces-1.3.10.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-mailreader-dao-1.3.10.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-scripting-1.3.10.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-taglib-1.3.10.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\struts\struts-tiles-1.3.10.jar" />
+    <property name="application.args.param" value="" />
+    <property name="ant.home" value="C:\Program Files\NetBeans 7.1.2\java\ant" />
+    <property name="libs.junit_4.src" value="C:\Users\Richard\.netbeans\7.1.2\docs\junit-4.10-sources.jar" />
+    <property name="conf.dir" value="./conf" />
+    <property name="webinf.dir" value="web/WEB-INF" />
+    <property name="libs.absolutelayout.maven-pom" value="" />
+    <property name="ant.java.version" value="1.6" />
+    <property name="java.library.path" value="D:\usr\local\Java\jdk1.6.0_21\jre\bin;.;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Microsoft Shared\Windows Live;C:\Program Files (x86)\Common Files\Microsoft Shared\Windows Live;D:\usr\local\PHP\;D:\usr\local\Perl64\site\bin;D:\usr\local\Perl64\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Common Files\Roxio Shared\DLLShared\;c:\Program Files (x86)\Common Files\Roxio Shared\12.0\DLLShared\;D:\usr\local\MySQL\MySQL_Server_5.1\bin;C:\Program Files\TortoiseSVN\bin;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\bin;D:\usr\local\PHP;C:\Program Files (x86)\Windows Live\Shared;D:\usr\local\GroovyGrails\grails-1.3.9/bin;D:\usr\local\GroovyGrails\Groovy-1.8.6/bin;D:\usr\local\MySQL\MySQL_Server_5.5\bin;C:\Program Files (x86)\SSH Communications Security\SSH Secure Shell" />
+    <property name="javadoc.author" value="true" />
+    <property name="libs.metro.maven-pom" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3.src" value="" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.PostgreSQLDriver.src" value="" />
+    <property name="sun.arch.data.model" value="32" />
+    <property name="basedir" value="D:\wow\src\working\WebApp\BusinessWebApp" />
+    <property name="jar.compress" value="false" />
+    <property name="libs.jstl11.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\standard.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jstl.jar" />
+    <property name="war.package" value="true" />
+    <property name="path.separator" value=";" />
+    <property name="dist.war" value="dist/BusinessWebApp.war" />
+    <property name="libs.javaee-web-api-6.0.javadoc" value="" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="libs.jaxws21.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\FastInfoset.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\gmbal-api-only.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\http.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\jaxws-rt.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\jaxws-tools.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\management-api.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\mimepull.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\policy.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\saaj-impl.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\stax-ex.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\streambuffer.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\woodstox.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\api\jaxws-api.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\api\jsr181-api.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\api\jsr250-api.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\jaxws22\api\saaj-api.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\api\jaxb-api.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\api\jsr173_api.jar" />
+    <property name="libs.struts.src" value="" />
+    <property name="apple.awt.graphics.UseQuartz" value="true" />
+    <property name="user.language" value="en" />
+    <property name="ant.file.type.-profiler-impl" value="file" />
+    <property name="j2ee.platform.classpath" value="D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/activation.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/annotations-api.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/catalina-ant.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/catalina-ha.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/catalina-tribes.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/catalina.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-beanutils.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-collections-3.1.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-collections-testframework-3.1.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-dbcp-1.2.1.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-digester.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-discovery-0.2.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-el.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-fileupload.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-logging.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-pool-1.2.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/commons-validator.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/ecj-3.7.2.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/el-api.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/itext-5.0.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/jasper-el.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/jasper.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/jsp-api.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/log4j-1.2.11.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/mail.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/mysql-connector-java-5.0.3-bin.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/servlet-api.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/ServletCharacterEncodingFilter.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/struts.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-api.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-coyote.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-dbcp.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-i18n-es.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-i18n-fr.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-i18n-ja.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-jdbc.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-juli-adapters.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-juli.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/tomcat-util.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/webserviceclient+ssl.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/wsdl4j-1.5.1.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/xerces-2.4.0.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/ymsg_network_v0_6.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/ymsg_support_v0_6.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/ymsg_test_v0_6.jar:D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0/lib/ZoasisWSClient.jar" />
+    <property name="libs.JAXB-ENDORSED.maven-pom" value="" />
+    <property name="libs.spring-framework.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring\spring-2.5.6.SEC03.jar" />
+    <property name="libs.eclipselink.maven-pom" value="" />
+    <property name="build.meta.inf.dir" value="build/web/META-INF" />
+    <property name="persistence.xml.dir" value="./conf" />
+    <property name="org.whattf.datatype.charset-registry" value="jar:file:/C:/Program%20Files/NetBeans%207.1.2/ide/modules/ext/validator.jar!/nu/validator/localentities/files/www_iana_org_assignments_character_sets" />
+    <property name="libs.primefaces.javadoc" value="" />
+    <property name="libs.spring-framework300.maven-pom" value="" />
+    <property name="file.reference.catalina.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="run.test.classpath" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:build/web/WEB-INF/classes:C:\Users\Richard\.netbeans\7.1.2\modules\ext\junit-4.10.jar:" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="libs.swing-layout.javadoc" value="C:\Program Files\NetBeans 7.1.2\platform\docs\swing-layout-1.0.4-doc.zip" />
+    <property name="libs.ejb3-persistence.maven-pom" value="" />
+    <property name="jspc.schemas" value="/resources/schemas/" />
+    <property name="libs.PostgreSQLDriver.maven-pom" value="" />
+    <property name="java.class.version" value="50.0" />
+    <property name="libs.javaee-endorsed-api-6.0.src" value="" />
+    <property name="file.reference.wsdl4j-1.5.1.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="netbeans.system_http_proxy" value="DIRECT" />
+    <property name="libs.eclipselink.javadoc" value="" />
+    <property name="libs.jsp-compilation.maven-pom" value="" />
+    <property name="user.properties.file" value="C:\Users\Richard\.netbeans\7.1.2\build.properties" />
+    <property name="file.reference.tomcat-dbcp.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="build.web.dir" value="build/web" />
+    <property name="libs.spring-framework.src" value="" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="libs.JAXB-ENDORSED.javadoc" value="" />
+    <property name="j2ee.server.middleware" value="C:/Program Files/glassfish-3.1.1" />
+    <property name="libs.JWSAntTasks.classpath" value="C:\Program Files\NetBeans 7.1.2\java\ant\extra\org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="libs.spring-framework300.src" value="" />
+    <property name="ant.file.type.BusinessWebApp" value="file" />
+    <property name="empty.dir" value="D:\wow\src\working\WebApp\BusinessWebApp\build\empty" />
+    <property name="display.browser" value="true" />
+    <property name="file.reference.commons-logging.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="version-output" value="java version &quot;1.6" />
+    <property name="javadoc.preview" value="true" />
+    <property name="java.home" value="D:\usr\local\Java\jdk1.6.0_21\jre" />
+    <property name="libs.jsp-compilation.src" value="" />
+    <property name="libs.spring-webmvc.src" value="" />
+    <property name="debug.test.classpath" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:build/web/WEB-INF/classes:C:\Users\Richard\.netbeans\7.1.2\modules\ext\junit-4.10.jar:" />
+    <property name="libs.javaee-endorsed-api-6.0.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\javaee6-endorsed\javax.annotation.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\javaee6-endorsed\jaxb-api-osgi.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\javaee6-endorsed\webservices-api-osgi.jar" />
+    <property name="libs.javaee-api-6.0.src" value="" />
+    <property name="file.reference.commons-digester.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="netbeans.importclass" value="org.netbeans.upgrade.AutoUpgrade" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+    <property name="libs.toplink.maven-pom" value="" />
+    <property name="libs.PostgreSQLDriver.javadoc" value="" />
+    <property name="libs.restlib.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\asm-3.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jackson-core-asl-1.7.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jackson-jaxrs-1.7.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jackson-mapper-asl-1.7.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jackson-xc-1.7.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-apache-client-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-atom-abdera-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-client-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-core-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-guice-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-json-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-multipart-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-server-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-simple-server-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jersey-spring-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\jettison-1.1.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\oauth-client-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\oauth-server-1.8.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\rest\oauth-signature-1.8.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\api\jaxb-api.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\api\jsr173_api.jar" />
+    <property name="file.reference.ServletCharacterEncodingFilter.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.MySQLDriver.maven-pom" value="" />
+    <property name="libs.junit_4.javadoc" value="C:\Users\Richard\.netbeans\7.1.2\docs\junit-4.10-javadoc.jar" />
+    <property name="libs.spring-webmvc.javadoc" value="" />
+    <property name="libs.toplink.src" value="" />
+    <property name="libs.EclipseLink-GlassFish-v3.maven-pom" value="" />
+    <property name="libs.javaee-web-api-6.0.maven-pom" value="" />
+    <property name="j2ee.deploy.on.save" value="false" />
+    <property name="libs.hibernate-support.src" value="" />
+    <property name="libs.javaee-endorsed-api-6.0.javadoc" value="" />
+    <property name="ant.file.BusinessWebApp-impl" value="D:\wow\src\working\WebApp\BusinessWebApp\nbproject\build-impl.xml" />
+    <property name="libs.spring-webmvc3.0.javadoc" value="" />
+    <property name="file.reference.commons-beanutils.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="file.reference.commons-collections-3.1.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="annotation.processing.enabled.in.editor" value="true" />
+    <property name="file.reference.tomcat-i18n-fr.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.restapi.src" value="" />
+    <property name="file.reference.annotations-api.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="sun.management.compiler" value="HotSpot Client Compiler" />
+    <property name="javac.deprecation" value="false" />
+    <property name="javadoc.use" value="true" />
+    <property name="client.urlPart" value="" />
+    <property name="sun.java2d.noddraw" value="true" />
+    <property name="libs.jsp-compiler.classpath" value="C:\Users\Richard\.netbeans\7.1.2\ant\extra\jspcompile.jar" />
+    <property name="javac.processorpath" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="file.reference.commons-collections-testframework-3.1.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.spring-webmvc.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\spring\spring-webmvc-2.5.6.SEC03.jar" />
+    <property name="javac.compilerargs" value="" />
+    <property name="ant.file" value="D:\wow\src\working\WebApp\BusinessWebApp\build.xml" />
+    <property name="libs.beans-binding.maven-pom" value="" />
+    <property name="libs.jsf12.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-1_2\commons-beanutils.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-1_2\commons-collections.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-1_2\commons-digester.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-1_2\commons-logging.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-1_2\jsf-api.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-1_2\jsf-impl.jar" />
+    <property name="has.custom.manifest" value="true" />
+    <property name="libs.restapi.maven-pom" value="" />
+    <property name="libs.beans-binding.src" value="" />
+    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="file.reference.ZoasisWSClient.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.swing-layout.src" value="C:\Program Files\NetBeans 7.1.2\platform\docs\swing-layout-1.0.4-src.zip" />
+    <property name="libs.Java-EE-GlassFish-v3.embedabbleejb" value="" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="java.vm.name" value="Java HotSpot(TM) Client VM" />
+    <property name="do.display.browser.debug" value="true" />
+    <property name="netbeans.user" value="C:\Users\Richard\.netbeans\7.1.2" />
+    <property name="java.io.tmpdir" value="C:\Users\Richard\AppData\Local\Temp\" />
+    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="endorsed.classpath.cmd.line.arg" value="" />
+    <property name="compile.jsps" value="false" />
+    <property name="file.reference.tomcat-i18n-es.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.jsp-compiler.src" value="" />
+    <property name="org.openide.awt.ActionReference.completion" value="org.netbeans.modules.apisupport.project.layers.PathCompletions" />
+    <property name="deploy.ant.properties.file" value="C:\Users\Richard\.netbeans\7.1.2\tomcat70.properties" />
+    <property name="sun.boot.library.path" value="D:\usr\local\Java\jdk1.6.0_21\jre\bin" />
+    <property name="have.sources" value="true" />
+    <property name="debug.classpath" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib:build/web/WEB-INF/classes" />
+    <property name="war.name" value="BusinessWebApp.war" />
+    <property name="javadoc.private" value="false" />
+    <property name="file.reference.struts.jar-1" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat6.0\lib\struts.jar" />
+    <property name="libs.jsf20.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-2_1\jsf-api.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-2_1\jsf-impl.jar" />
+    <property name="javadoc.encoding.used" value="Cp1252" />
+    <property name="file.reference.mysql-connector-java-5.0.3-bin.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="file.reference.jsp-api.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="file.reference.jasper.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="ant.project.name" value="BusinessWebApp" />
+    <property name="netbeans.hash.code" value="unique=NB_JAVA049f4950b-e265-4f4c-8720-890efb97c50c_8facfe04-e450-4718-a7fd-2ba821909b34" />
+    <property name="libs.jsp-compilation-syscp.maven-pom" value="" />
+    <property name="sun.cpu.isalist" value="pentium_pro+mmx pentium_pro pentium+mmx pentium i486 i386 i86" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="j2ee.server.domain" value="C:/Users/Richard/.netbeans/7.0/config/GF3/domain1" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="file.reference.struts.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="file.reference.ymsg_support_v0_6.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="j2ee.server.home" value="D:/usr/local/ApacheSoftwareFoundation/Tomcat_7.0" />
+    <property name="libs.hibernate-support.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\antlr-2.7.6.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\asm.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\asm-attrs.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\cglib-2.1.3.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\commons-collections-2.1.1.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\dom4j-1.6.1.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\ehcache-1.2.3.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\jdbc2_0-stdext.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\jta.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate3.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-tools.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-annotations.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-commons-annotations.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\hibernate-entitymanager.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\javassist.jar" />
+    <property name="user.home" value="C:\Users\Richard" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="libs.primefaces.maven-pom" value="" />
+    <property name="debug-args-line" value="-Xdebug" />
+    <property name="sun.zip.disableMemoryMapping" value="true" />
+    <property name="libs.javaee-api-6.0.maven-pom" value="" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="libs.hibernate-persistence.maven-pom" value="" />
+    <property name="libs.spring-framework300.javadoc" value="" />
+    <property name="libs.absolutelayout.javadoc" value="" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="nu.validator.spec.microsyntax-descriptions" value="jar:file:/C:/Program%20Files/NetBeans%207.1.2/ide/modules/ext/validator.jar!/nu/validator/localentities/files/wiki_whatwg_org_wiki_MicrosyntaxDescriptions" />
+    <property name="no.dist.ear.dir" value="true" />
+    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.javac-api.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\javac-api-nb-7.0-b07.jar" />
+    <property name="java.version" value="1.6.0_21" />
+    <property name="javadoc.version" value="true" />
+    <property name="libs.MySQLDriver.javadoc" value="" />
+    <property name="file.reference.commons-dbcp-1.2.1.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="libs.restlib_gfv3ee6.maven-pom" value="" />
+    <property name="source.encoding" value="Cp1252" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="libs.eclipselinkmodelgen.maven-pom" value="" />
+    <property name="libs.jsp-compilation-syscp.javadoc" value="" />
+    <property name="libs.junit.maven-pom" value="" />
+    <property name="libs.eclipselinkmodelgen.javadoc" value="" />
+    <property name="file.reference.jasper-jdt.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.metro.javadoc" value="C:\Users\Richard\.netbeans\7.1.2\docs\metro-1.4-doc.zip" />
+    <property name="libs.struts.maven-pom" value="" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="libs.jaxb.src" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsgenerate" value="" />
+    <property name="libs.jaxb.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\jaxb1-impl.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\activation.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\api\jaxb-api.jar;C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\api\jsr173_api.jar" />
+    <property name="file.reference.log4j-1.2.11.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="libs.spring-webmvc3.0.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-webmvc-3.0.6.RELEASE.jar" />
+    <property name="libs.swing-layout.classpath" value="C:\Program Files\NetBeans 7.1.2\platform\modules\ext\swing-layout-1.0.4.jar" />
+    <property name="jspc.dtds" value="/resources/dtds/" />
+    <property name="file.reference.servlet-api.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.restlib.src" value="" />
+    <property name="javac.source" value="1.5" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="libs.hibernate-persistence.src" value="" />
+    <property name="java.specification.version" value="1.6" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="libs.spring-framework.maven-pom" value="" />
+    <property name="sun.boot.class.path" value="D:\usr\local\Java\jdk1.6.0_21\jre\lib\resources.jar;D:\usr\local\Java\jdk1.6.0_21\jre\lib\rt.jar;D:\usr\local\Java\jdk1.6.0_21\jre\lib\sunrsasign.jar;D:\usr\local\Java\jdk1.6.0_21\jre\lib\jsse.jar;D:\usr\local\Java\jdk1.6.0_21\jre\lib\jce.jar;D:\usr\local\Java\jdk1.6.0_21\jre\lib\charsets.jar;D:\usr\local\Java\jdk1.6.0_21\jre\classes" />
+    <property name="file.reference.ymsg_network_v0_6.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="javac.target" value="1.5" />
+    <property name="build.test.classes.dir" value="" />
+    <property name="src.dir" value="src" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="libs.jsf20.src" value="" />
+    <property name="libs.jsf12.src" value="" />
+    <property name="j2ee.platform" value="1.4" />
+    <property name="libs.struts.javadoc" value="C:\Users\Richard\.netbeans\7.1.2\docs\struts-1.3.10-javadoc.zip" />
+    <property name="file.reference.webserviceclient_ssl.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="ignore.failing.tests" value="true" />
+    <property name="jaxbwiz.endorsed.dirs" value="C:\Program Files\NetBeans 6.8\ide12\modules\ext\jaxb\api" />
+    <property name="libs.Comet-GlassFish-v3.classpath" value="C:\Program Files\glassfish-3.1.1\glassfish\modules\grizzly-comet.jar" />
+    <property name="web.docbase.dir" value="web" />
+    <property name="libs.restlib_gfv3ee6.javadoc" value="C:\Users\Richard\.netbeans\7.1.2\docs\jsr311-api-1.1.1-javadoc.zip" />
+    <property name="libs.primefaces.src" value="" />
+    <property name="dist.dir" value="dist" />
+    <property name="libs.groovy-all.javadoc" value="" />
+    <property name="libs.groovy-all.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\groovy-all.jar" />
+    <property name="javac.fork" value="true" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="default.javac.source" value="1.6" />
+    <property name="debug-transport-by-os" value="dt_shmem" />
+    <property name="libs.MySQLDriver.src" value="" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="file.reference.activation.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="file.reference.itext-5.0.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="build.test.results.dir" value="" />
+    <property name="java.runtime.version" value="1.6.0_21-b07" />
+    <property name="libs.ejb3-persistence.javadoc" value="" />
+    <property name="do.tmp.war.package.with.custom.manifest" value="true" />
+    <property name="default.javac.target" value="1.6" />
+    <property name="libs.Java-EE-GlassFish-v3.src" value="" />
+    <property name="libs.junit_4.classpath" value="C:\Users\Richard\.netbeans\7.1.2\modules\ext\junit-4.10.jar" />
+    <property name="user.timezone" value="" />
+    <property name="libs.javaee-endorsed-api-6.0.maven-pom" value="" />
+    <property name="netbeans.dirs" value="C:\Program Files\NetBeans 7.1.2\nb;C:\Program Files\NetBeans 7.1.2\ergonomics;C:\Program Files\NetBeans 7.1.2\ide;C:\Program Files\NetBeans 7.1.2\java;C:\Program Files\NetBeans 7.1.2\apisupport;C:\Program Files\NetBeans 7.1.2\webcommon;C:\Program Files\NetBeans 7.1.2\websvccommon;C:\Program Files\NetBeans 7.1.2\enterprise;C:\Program Files\NetBeans 7.1.2\mobility;C:\Program Files\NetBeans 7.1.2\profiler;C:\Program Files\NetBeans 7.1.2\python;C:\Program Files\NetBeans 7.1.2\php;C:\Program Files\NetBeans 7.1.2\identity;C:\Program Files\NetBeans 7.1.2\harness;C:\Program Files\NetBeans 7.1.2\cnd;C:\Program Files\NetBeans 7.1.2\dlight;C:\Program Files\NetBeans 7.1.2\groovy;C:\Program Files\NetBeans 7.1.2\extra;C:\Program Files\NetBeans 7.1.2\javacard;C:\Program Files\NetBeans 7.1.2\javafx" />
+    <property name="file.reference.catalina-tribes.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.jsf20.javadoc" value="" />
+    <property name="java.ext.dirs" value="D:\usr\local\Java\jdk1.6.0_21\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext" />
+    <property name="libs.restlib_gfv3ee6.src" value="" />
+    <property name="libs.metro.src" value="" />
+    <property name="endorsed.classpath" value="" />
+    <property name="libs.absolutelayout.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\AbsoluteLayout.jar" />
+    <property name="excludes" value="" />
+    <property name="libs.metro.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\activation.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\metro\webservices-api.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\metro\webservices-extra-api.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\metro\webservices-extra.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\metro\webservices-rt.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\metro\webservices-tools.jar" />
+    <property name="libs.restlib.maven-pom" value="" />
+    <property name="apple.laf.useScreenMenuBar" value="true" />
+    <property name="java.class.path" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib;D:\wow\src\working\WebApp\BusinessWebApp\build\web\WEB-INF\classes;C:\Users\Richard\.netbeans\7.1.2\modules\ext\junit-4.10.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\activation.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\annotations-api.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\catalina-ant.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\catalina-ha.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\catalina-tribes.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\catalina.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-beanutils.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-collections-3.1.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-collections-testframework-3.1.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-dbcp-1.2.1.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-digester.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-discovery-0.2.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-el.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-fileupload.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-logging.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-pool-1.2.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\commons-validator.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\ecj-3.7.2.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\el-api.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\itext-5.0.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\jasper-el.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\jasper.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\jsp-api.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\log4j-1.2.11.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\mail.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\mysql-connector-java-5.0.3-bin.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\servlet-api.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\ServletCharacterEncodingFilter.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\struts.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-api.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-coyote.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-dbcp.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-i18n-es.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-i18n-fr.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-i18n-ja.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-jdbc.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-juli-adapters.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-juli.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\tomcat-util.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\webserviceclient+ssl.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\wsdl4j-1.5.1.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\xerces-2.4.0.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\ymsg_network_v0_6.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\ymsg_support_v0_6.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\ymsg_test_v0_6.jar;D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib\ZoasisWSClient.jar;C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant-launcher.jar;C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant.jar;C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant-junit.jar;C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant-junit4.jar" />
+    <property name="file.reference.mail.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.absolutelayout.src" value="" />
+    <property name="j2ee.server.type" value="Tomcat" />
+    <property name="os.version" value="6.2" />
+    <property name="file.reference.tomcat-coyote.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.EclipseLink-GlassFish-v3.javadoc" value="" />
+    <property name="libs.toplink.javadoc" value="" />
+    <property name="sun.desktop" value="windows" />
+    <property name="libs.Comet-GlassFish-v3.src" value="" />
+    <property name="libs.restlib.javadoc" value="C:\Users\Richard\.netbeans\7.1.2\docs\jersey-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\jersey-apache-client-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\jersey-atom-abdera-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\jersey-guice-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\jersey-multipart-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\jersey-simple-server-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\jersey-spring-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\oauth-client-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\oauth-server-1.8-javadoc.zip;C:\Users\Richard\.netbeans\7.1.2\docs\oauth-signature-1.8-javadoc.zip" />
+    <property name="war.content.additional" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="j2ee.platform.embeddableejb.classpath" value="" />
+    <property name="forceRedeploy" value="false" />
+    <property name="file.reference.commons-el.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="libs.eclipselink.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\eclipselink\eclipselink-2.3.0.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\eclipselink\javax.persistence-2.0.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\eclipselink\org.eclipse.persistence.jpa.jpql_1.0.0.jar" />
+    <property name="libs.beans-binding.javadoc" value="C:\Program Files\NetBeans 7.1.2\java\docs\beansbinding-1.2.1-doc.zip" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="libs.Java-EE-GlassFish-v3.classpath" value="C:\Program Files\glassfish-3.1.1\glassfish\modules\jsf-api.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\endorsed\jaxb-api-osgi.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\bean-validator.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.enterprise.deploy.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.ejb.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.transaction.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jstl-impl.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jsf-impl.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.management.j2ee.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.jms.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\endorsed\javax.annotation.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-core.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.security.jacc.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.resource.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.mail.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\weld-osgi-bundle.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jaxb-osgi.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.servlet.jsp.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\webservices-osgi.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.servlet.jsp.jstl.jar;C:\Program Files\glassfish-3.1.1\mq\lib\jaxm-api.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.security.auth.message.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\endorsed\webservices-api-osgi.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.persistence.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\javax.servlet.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\web-core.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jackson-core-asl.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jackson-jaxrs.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jackson-mapper-asl.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-client.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-core.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-gf-server.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-json.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jersey-multipart.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\jettison.jar;C:\Program Files\glassfish-3.1.1\glassfish\modules\mimepull.jar" />
+    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
+    <property name="libs.CopyLibs.classpath" value="C:\Program Files\NetBeans 7.1.2\java\ant\extra\org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="ant.file.-profiler-impl" value="D:\wow\src\working\WebApp\BusinessWebApp\nbproject\profiler-build-impl.xml" />
+    <property name="libs.spring-framework300.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\org-apache-commons-logging.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\cglib-2.2.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-aop-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-asm-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-aspects-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-beans-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-context-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-context-support-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-core-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-expression-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-instrument-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-instrument-tomcat-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-jdbc-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-jms-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-orm-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-oxm-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-test-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-tx-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-web-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-webmvc-portlet-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-webmvc-3.0.6.RELEASE.jar;C:\Program Files\NetBeans 7.1.2\java\modules\ext\spring-3.0\spring-struts-3.0.6.RELEASE.jar" />
+    <property name="libs.jsp-compiler.maven-pom" value="" />
+    <property name="ant.file.type.BusinessWebApp-impl" value="file" />
+    <property name="libs.spring-webmvc.maven-pom" value="" />
+    <property name="libs.Java-EE-GlassFish-v3.wsinterop" value="" />
+    <property name="libs.ejb3-persistence.classpath" value="C:\Program Files\NetBeans 7.1.2\java\modules\ext\hibernate\ejb3-persistence.jar" />
+    <property name="libs.JAXB-ENDORSED.src" value="" />
+    <property name="libs.spring-framework.javadoc" value="" />
+    <property name="libs.PostgreSQLDriver.classpath" value="C:\Program Files\NetBeans 7.1.2\ide\modules\ext\postgresql-8.3-603.jdbc3.jar" />
+    <property name="libs.jsf12.maven-pom" value="" />
+    <property name="libs.junit.src" value="" />
+    <property name="annotation.processing.source.output" value="build/generated-sources/ap-source-output" />
+    <property name="build.dir" value="build" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="libs.jsp-compilation.classpath" value="C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\servlet3.0-jsp2.2-api.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\glassfish-jspparser-3.0.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jsf-2_1\jsf-api.jar;C:\Users\Richard\.netbeans\7.1.2\modules\ext\jstl.jar;C:\Program Files\NetBeans 7.1.2\java\ant\lib\ant-launcher.jar" />
+    <property name="file.reference.commons-pool-1.2.jar" value="D:\usr\local\ApacheSoftwareFoundation\Tomcat_7.0\lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.3 compiled on February 26 2012" />
+    <property name="j2ee.platform.is.jsr109" value="true" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="jdkBug6558476" value="true" />
+    <property name="platform.active" value="default_platform" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+  </properties>
+  <error message="NewEmptyJUnitTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: NewEmptyJUnitTest
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:307)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:248)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:169)
+</error>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

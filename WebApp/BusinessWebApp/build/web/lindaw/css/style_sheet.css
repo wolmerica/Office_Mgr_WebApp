@@ -1,0 +1,25 @@
+BODY         { font-family: Arial; font-size: 10Pt }
+BIG          { font-family: Arial; font-size: 12Pt }
+TH           { font-family: Arial; font-size: 8Pt }
+TD           { font-family: Arial; font-size: 8Pt }
+PRE, SMALL   { font-size: 8Pt }
+.BANNER      { color: white;  background: #36566E }
+.ODD         { background: white }
+.EVEN        { background: silver }
+
+input { 
+font-family: arial;
+font-size: 8pt;
+font-weight: normal;
+}
+
+button { 
+font-family: arial;
+font-size: 8pt;
+font-weight: normal;
+}
+
+select { 
+font-family: arial;
+font-size: 8pt;
+}
